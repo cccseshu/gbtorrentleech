@@ -6,7 +6,7 @@ class Config(object):
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID" ))
     API_HASH = os.environ.get("API_HASH")
-    OWNER_ID = int(os.environ.get("OWNER_ID",-1001236396940 ))
+    OWNER_ID = int(os.environ.get("OWNER_ID",1005016475 ))
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
     AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
@@ -19,7 +19,7 @@ class Config(object):
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
     # default thumbnail to be used in the videos
-    DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://placehold.it/90x90")
+    DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "http://tgfile.stream.seshu.co/46801983723116/2020-12-09_17:22:51.jpg")
     # maximum message length in Telegram
     MAX_MESSAGE_LENGTH = 4096
     # set timeout for subprocess
@@ -35,8 +35,8 @@ class Config(object):
     # add offensive API
     TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
     CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
-    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
-    YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
+    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech@ProfessorSnapebot")
+    YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl@ProfessorSnapebot")
     RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
     DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "TorrentLeech-Gdrive")
     GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech")
@@ -48,7 +48,7 @@ class Config(object):
     SAVE_THUMBNAIL = os.environ.get("SAVE_THUMBNAIL", "savethumbnail")
     CLEAR_THUMBNAIL = os.environ.get("CLEAR_THUMBNAIL", "clearthumbnail")
     UPLOAD_AS_DOC = os.environ.get("UPLOAD_AS_DOC", "False")
-    PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl")
+    PYTDL_COMMAND_G = os.environ.get("PYTDL_COMMAND_G", "pytdl@ProfessorSnapebot")
     LOG_COMMAND = os.environ.get("LOG_COMMAND", "log")
     CLONE_COMMAND_G = os.environ.get("CLONE_COMMAND_G", "gclone")
     UPLOAD_COMMAND = os.environ.get("UPLOAD_COMMAND", "upload")
